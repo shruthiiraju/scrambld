@@ -1,0 +1,30 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  margin: auto;
+  padding: 40px 15px;
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: 'Righteous';
+}
+
+.starter-template h1 {
+    font-family: 'Fredoka One', cursive; 
+    color:#00a5ff;
+}
+
+.navbar li a{
+    color: #9DD0FF;
+}
+
+.navbar a{
+    color: #36B3F6;
+    font-family: 'Righteous';
+
+}
+
+.page-header { 
+    border-bottom:none; 
+}
+ 
