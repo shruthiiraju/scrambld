@@ -19,6 +19,7 @@
     <link href="static/css/starter-template.css" rel="stylesheet">
     <link href="static/css/boxesanim.css" rel="stylesheet">
     <link href="static/css/navbar.css" rel="stylesheet">
+    <link href="static/css/guess.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,7 +28,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body background=#EBF5FB>
 
     <nav class="navbar navbar-fixed-top">
       <div class="container">
@@ -53,27 +54,30 @@
     <div class="container">
        
        <div class="starter-template">
-            <div class="btn-group-vertical">
-              
-              
-              <form method="post" action='/chooselvl'>
-                       <button type="submit" class="btn btn-lg btn-success" style="border-radius:10px;margin-top:40%;" name="lvl" value="1">Easy
-                            <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        </button>
-
-                        <br><br>
-                    <button type="submit" class="btn btn-lg btn-warning" style="border-radius:10px" name="lvl" value="2">Intermediate
-                        <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    </button>
-
-                        <br><br>
-                    <button type="sumbit" class="btn btn-lg btn-danger" style="border-radius:10px" name="lvl" value="3">Advanced
-                        <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    </button>
-             </form>
-                
-            </div>
-        </div>
+            {% for key, value in scramble.items() %}
+         
+                    <tr>
+                       <th><h1> {{ key }} </h1></th>
+                    </tr>
+                    <tr>
+                       <td><h2> {{ value }} </h2></td> 
+                    </tr>
+                    
+            
+                 {% endfor %}
+           
+       </div>
+       
+       <div class="starter-template">
+           <div class="form-group">
+              <label for="usr"><h1>Guess:</h1></label>
+              <input type="text" class="form-control" id="guess">
+           </div>
+       </div>
+       
+       
+       
+       
 
     </div><!-- /.container -->
 
