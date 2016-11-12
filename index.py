@@ -10,7 +10,7 @@ app.secret_key = "super secret key"
 ewords = ["and", 'house', 'safety', 'switch', 'light', 'value', 'screen', 'fake', 'police', 'danger', "release", "chair", "scramble", "pencil", "hundred", "board", "keyboard", "binary", "english", "india"]
 mwords = ['recycle', 'document', 'python', 'german', 'scramble', 'september', 'license', "section", "dioxide",
           "pigment", "process", "ordinary", "elements", "language", "zimbabwe", "wednesday", "kingdom", ]
-hwords = ['automatic', 'irresponsible', 'eligible', 'bachelor', 'flabbergasted', "photosynthesis", "carpentry",
+hwords = ['automatic', 'irresponsible', 'eligible', 'bachelor', "photosynthesis", "carpentry",
           "concentric", "parentheses", "assessment", "locomotive", "evidence", "dictionary"]
 
 
