@@ -27,7 +27,3 @@ body {
 .page-header { 
     border-bottom:none; 
 }
-
-.btn-group-vertical button btn btn-lg {
-  margin-bottom: 50%;
-}
