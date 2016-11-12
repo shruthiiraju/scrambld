@@ -3,6 +3,7 @@ docutils==0.12
 Flask==0.11.1
 Flask-Session==0.3.0
 Flask-SQLAlchemy==2.1
+gunicorn==19.6.0
 itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==0.23
