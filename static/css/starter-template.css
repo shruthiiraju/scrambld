@@ -27,8 +27,3 @@ body {
 .page-header { 
     border-bottom:none; 
 }
-
-.btn {
-    position: absolute;
-    margin: 0 auto;
-}
