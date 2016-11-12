@@ -10,7 +10,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/difficulty')
-def index():
+def chooselevel():
     return render_template('level.html')
 
 if __name__ == "__main__":
