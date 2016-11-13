@@ -11,11 +11,11 @@ app.secret_key = "super secret key"
 ewords = ['house', 'safety', 'switch', 'light', 'value', 'screen', 'fake', 'police', 'danger', "release", "chair", "scramble", "pencil", "board", "english", "india",'bangle','rocket','shirt','family',"garlic"]
 
 
-mwords = ['recycle', "keyboard", "binary","hundred",'document', 'python', 'german', 'scramble', 'september', 'license',"eclair", "section", "dioxide","pigment", "process", "ordinary", "elements", "language",  "wednesday",
+mwords = ['recycle', "keyboard", "binary","hundred",'document', 'python', 'german', 'scramble', 'september', 'license',"eclair", "section", "dioxide","pigment", "process", "ordinary", "elements", "language",
           "kingdom","fourth","blanket","airport","cabinet","disease","organic" ]
 
 
-hwords = ['automatic', 'irresponsible', 'eligible', 'bachelor', "photosynthesis", "carpentry","zimbabwe",
+hwords = ['automatic', "wednesday",'irresponsible', 'eligible', 'bachelor', "photosynthesis", "carpentry","zimbabwe",
           "concentric", "parentheses", "assessment", "locomotive", "evidence", "dictionary","bungalow","chipmunk","dinosaur","dyslexia","housefly","kilobyte","marigold","mythical","oriental"]
 
 
