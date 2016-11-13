@@ -84,9 +84,12 @@ def check():
 def about():
     return render_template('about.html')
 
-@app.route('/answer')
+@app.route('/answer',methods=['GET', 'POST'])
 def answer():
-    return render_template('answer.html')
+    if request.method == 'POST':
+        return render_template('answer.html')
+    else:
+        return render_template('answer.html')
     
 
 
