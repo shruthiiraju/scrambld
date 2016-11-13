@@ -52,34 +52,18 @@
     </nav>
 
     <div class="container">
-       
+    
        <div class="starter-template">
-            {% for key, value in scramble.items() %}
-         
-                    <tr>
-                       <th><h1> {{ key }} </h1></th>
-                    </tr>
-                    <tr>
-                       <td><h3> {{ value }} </h3></td> 
-                    </tr>
-                    
-            
-                 {% endfor %}
+            <h1> Oops....</h1>
+            <h2> Your guess was incorrect.</h2>
+            <br>
+            <form method="post" action='/chooselvl'>
+               <button type="submit" class="btn btn-lg btn-success"> Try Again </button>
            
+           </form>
+      
+      
        </div>
-       
-       <div class="starter-template">
-          <form method="post" action='/checkguess'>
-               <div class="form-group">
-                  <label for="usr"><h1>Guess:</h1></label>
-                  <input type="text" class="form-control" name="guess">
-               </div>
-          </form>
-       </div>
-       
-       
-       
-       
 
     </div><!-- /.container -->
 

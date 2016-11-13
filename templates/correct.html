@@ -19,7 +19,6 @@
     <link href="static/css/starter-template.css" rel="stylesheet">
     <link href="static/css/boxesanim.css" rel="stylesheet">
     <link href="static/css/navbar.css" rel="stylesheet">
-    <link href="static/css/guess.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +27,7 @@
     <![endif]-->
   </head>
 
-  <body background=#EBF5FB>
+  <body>
 
     <nav class="navbar navbar-fixed-top">
       <div class="container">
@@ -54,32 +53,15 @@
     <div class="container">
        
        <div class="starter-template">
-            {% for key, value in scramble.items() %}
-         
-                    <tr>
-                       <th><h1> {{ key }} </h1></th>
-                    </tr>
-                    <tr>
-                       <td><h3> {{ value }} </h3></td> 
-                    </tr>
-                    
-            
-                 {% endfor %}
+           <h1> Good Job! </h1>
+           <h2> Your guess was correct. </h2>
+           <br>
+           <form method="post" action='/difficulty'>
+               <button type="submit" class="btn btn-lg btn-success" >Play Again</button>
            
-       </div>
-       
-       <div class="starter-template">
-          <form method="post" action='/checkguess'>
-               <div class="form-group">
-                  <label for="usr"><h1>Guess:</h1></label>
-                  <input type="text" class="form-control" name="guess">
-               </div>
-          </form>
-       </div>
-       
-       
-       
-       
+           </form>
+           
+        </div>
 
     </div><!-- /.container -->
 
