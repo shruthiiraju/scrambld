@@ -8,10 +8,10 @@ app.debug = True
 app.secret_key = "super secret key"
 
 
-ewords = ['house', 'safety', 'switch', 'light', 'value', 'screen', 'fake', 'police', 'danger', "release", "chair", "scramble", "pencil", "board", "keyboard", "binary", "english", "india",'bangle','rocket','shirt','family',"garlic"]
+ewords = ['house', 'safety', 'switch', 'light', 'value', 'screen', 'fake', 'police', 'danger', "release", "chair", "scramble", "pencil", "board", "english", "india",'bangle','rocket','shirt','family',"garlic"]
 
 
-mwords = ['recycle', "hundred",'document', 'python', 'german', 'scramble', 'september', 'license',"eclair", "section", "dioxide","pigment", "process", "ordinary", "elements", "language",  "wednesday",
+mwords = ['recycle', "keyboard", "binary","hundred",'document', 'python', 'german', 'scramble', 'september', 'license',"eclair", "section", "dioxide","pigment", "process", "ordinary", "elements", "language",  "wednesday",
           "kingdom","fourth","blanket","airport","cabinet","disease","organic" ]
 
 
@@ -78,6 +78,10 @@ def check():
         return render_template('correct.html')
     else:
         return render_template('incorrect.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
     
 
 
