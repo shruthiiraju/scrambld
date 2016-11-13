@@ -15,7 +15,7 @@ mwords = ['recycle', "keyboard", "binary","hundred",'document', 'python', 'germa
           "kingdom","fourth","blanket","airport","cabinet","disease","organic" ]
 
 
-hwords = ['automatic', 'irresponsible', 'eligible', 'bachelor', "photosynthesis", "carpentry","Zimbabwe",
+hwords = ['automatic', 'irresponsible', 'eligible', 'bachelor', "photosynthesis", "carpentry","zimbabwe",
           "concentric", "parentheses", "assessment", "locomotive", "evidence", "dictionary","bungalow","chipmunk","dinosaur","dyslexia","housefly","kilobyte","marigold","mythical","oriental"]
 
 
@@ -74,6 +74,7 @@ def chooselvl():
 def check():
     guess = request.form['guess']
     word = request.cookies.get('word')
+    guess = guess.lower()
     if guess == word or guess==(word+" "):
         return render_template('correct.html')
     else:
