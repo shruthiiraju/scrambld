@@ -74,7 +74,7 @@ def chooselvl():
 def check():
     guess = request.form['guess']
     word = request.cookies.get('word')
-    if guess == word:
+    if guess == word or guess==(word+" "):
         return render_template('correct.html')
     else:
         return render_template('incorrect.html')
