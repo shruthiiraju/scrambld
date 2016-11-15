@@ -52,10 +52,25 @@
     </nav>
 
     <div class="container">
-      <div class='starter-template'>
-       <h6> told u not to click</h6>
-       <img style="height:20%; width:30%;" src='static/img/glasses.png'/>
-      </div>
+       <div class="starter-template">
+            {% for key, value in dword.items() %}
+         
+                    <tr>
+                       <th><h1> {{ key }} </h1></th>
+                    </tr>
+                    <tr>
+                       <td><h3> {{ value }} </h3></td> 
+                    </tr>
+            {% endfor %}
+        <div class="starter-template">
+            <h2> Better luck next time! </h2>
+            <br><br>
+            <form method="post" action='/difficulty'>
+               <button type="submit" class="btn btn-lg btn-success" >Play Again</button>
+            </form>
+           </div>
+        </div>
+       
     </div><!-- /.container -->
 
 

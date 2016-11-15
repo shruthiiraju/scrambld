@@ -84,12 +84,13 @@ def check():
 def about():
     return render_template('about.html')
 
-@app.route('/answer',methods=['GET', 'POST'])
+@app.route('/answer',methods=['POST'])
 def answer():
-    if request.method == 'POST':
-        return render_template('answer.html')
-    else:
-        return render_template('answer.html')
+    word = request.cookies.get('word')
+    dword = { "Your word was....":word}
+    return render_template('answer.html',dword=dword)
+    
+    
     
 
 
